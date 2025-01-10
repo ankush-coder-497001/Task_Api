@@ -11,7 +11,7 @@ require("dotenv").config();
 const app = express();
 // Middleware
 app.use(cors({
-  origin: "https://task-api-ankush.netlify.app/",
+  origin: "*",
 }));
 app.use(bodyParser.json());
 
