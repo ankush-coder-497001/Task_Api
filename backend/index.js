@@ -9,7 +9,7 @@ const cors = require("cors");
 require("dotenv").config();
 
 const app = express();
-
+const pass = TroCphB91rjr8sV5
 // Middleware
 app.use(cors({
   origin: "https://task-api-ankush.netlify.app/",
@@ -17,7 +17,7 @@ app.use(cors({
 app.use(bodyParser.json());
 
 // MongoDB Connection
-mongoose.connect(process.env.MONGO_URI).then(()=>{
+mongoose.connect('mongodb+srv://ankushcoder497001:TroCphB91rjr8sV5@cluster0.8c5du.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0').then(()=>{
   console.log("Connected to MongoDB");
 })
 
