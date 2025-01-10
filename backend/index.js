@@ -66,7 +66,7 @@ app.post("/api/forget-password", async (req, res) => {
     if (!user) return res.status(404).json({ error: "User not found" });
 
     const token = jwt.sign({ id: user._id }, process.env.JWT_SECRET, { expiresIn: "15m" });
-    const resetLink = `http://localhost:5173/resetpassword/${token}`;
+    const resetLink = `https://task-api-ankush.netlify.app/reset-pass/${token}`;
 
     // Send Email
     const transporter = nodemailer.createTransport({
