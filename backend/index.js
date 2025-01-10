@@ -9,7 +9,6 @@ const cors = require("cors");
 require("dotenv").config();
 
 const app = express();
-const pass = TroCphB91rjr8sV5
 // Middleware
 app.use(cors({
   origin: "https://task-api-ankush.netlify.app/",
